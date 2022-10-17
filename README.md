@@ -41,7 +41,9 @@ bindedFn(window.proxy, window.proxy, window.proxy);
 
 ```shell
 
-cd ./main    //切换到主应用
-npm run run:all   //脚本运行所有的微应用，请确保端口的唯一性以及微应用的依赖安装成功
+all:install   //安装所有微应用的依赖
+all:start   //默认会优先开启http://localhost:7099/主应用，然后开启所有微应用的devServer, 请确保端口号的独立。构建时间较长，请耐心等待。
 
 ```
+
+**注意： 某一微应用本地服务运行后，请立即刷新浏览器，即可看到页面加载**
