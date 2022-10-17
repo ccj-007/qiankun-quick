@@ -41,8 +41,8 @@ bindedFn(window.proxy, window.proxy, window.proxy);
 
 ```shell
 
-all:install   //安装所有微应用的依赖
-all:start   //默认会优先开启http://localhost:7099/主应用，然后开启所有微应用的devServer, 请确保端口号的独立。构建时间较长，请耐心等待。
+npm run all:install   //安装所有微应用的依赖
+npm run all:start   //默认会优先开启http://localhost:7099/主应用，然后开启所有微应用的devServer, 请确保端口号的独立。构建时间较长，请耐心等待。
 
 ```
 
