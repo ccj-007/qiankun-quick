@@ -25,3 +25,23 @@
 2. 给这个函数 绑定上下文 window.proxy
 3. 执行这个函数，并 把上面提到的沙箱对象 window.proxy 作为入参分别传入
 
+```js
+
+function fn(window, self, globalThis) {
+  // 你的 JavaScript code
+}
+
+const bindedFn = fn.bind(window.proxy);
+
+bindedFn(window.proxy, window.proxy, window.proxy);
+
+```
+
+### 如果使用 ？
+
+```shell
+
+cd ./main    //切换到主应用
+npm run run:all   //脚本运行所有的微应用，请确保端口的唯一性以及微应用的依赖安装成功
+
+```
