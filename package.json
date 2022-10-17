@@ -1,0 +1,12 @@
+{
+  "name": "qiankun-quick",
+  "version": "1.0.0",
+  "description": "几分钟带你快速实现一个微应用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "chase chen <596487930@qq.com> (https://github.com/ccj-007)",
+  "license": "MIT"
+}

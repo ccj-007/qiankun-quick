@@ -1,0 +1,40 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "start:multiple": "cross-env MODE=multiple webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run:angular9": "cd ../angular9 && npm run start",
+    "run:purehtml": "cd ../purehtml && npm run start",
+    "run:react15": "cd ../react15 && npm run start",
+    "run:react16": "cd ../react16 && npm run start",
+    "run:vue": "cd ../vue && npm run start",
+    "run:vue3": "cd ../vue3 && npm run start",
+    "run:all": "(npm run run:angular9 & npm run run:purehtml & npm run run:react15  & npm run run:react16  & npm run run:vue  & npm run run:vue3) && npm run start"
+  },
+  "author": "",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-react-jsx": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less-loader": "^6.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "qiankun": "^2.8.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "vue": "^2.6.11",
+    "zone.js": "^0.10.2"
+  }
+}
